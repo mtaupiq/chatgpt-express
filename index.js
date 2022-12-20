@@ -10,8 +10,8 @@ app.use(express.json());
     const chatgptApi = new ChatGPTAPIBrowser({
         email: process.env.EMAIL,
         password: process.env.PASSWORD,
-        isGoogleLogin: false,
-        isMicrosoftLogin: true,
+        isGoogleLogin: process.env.IS_GOOGLE ?? false,
+        isMicrosoftLogin: process.env.IS_MICROSOFT ?? false,
     })
     await chatgptApi.initSession()
     console.log(`ChatGPT session init success!`)
