@@ -26,4 +26,4 @@ COPY --chown=node:node . .
 
 EXPOSE 3000
 
-CMD [ "xvfb-run", "--auto-servernum", "--server-num=1", "node", "index.js" ]
+CMD [ "npm", "start" ]
