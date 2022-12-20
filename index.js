@@ -14,6 +14,7 @@ app.use(express.json());
         isMicrosoftLogin: true,
     })
     await chatgptApi.initSession()
+    console.log(`ChatGPT session init success!`)
     const queryChatgpt = async (query, conversations) => {
         if (!conversations) {
             return await chatgptApi.sendMessage(query)
