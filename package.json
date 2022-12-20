@@ -1,0 +1,19 @@
+{
+  "name": "chatgpt-express",
+  "version": "1.0.0",
+  "description": "ChatGPT with express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "xvfb-run --auto-servernum node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chatgpt": "^3.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "puppeteer": "^19.4.1"
+  }
+}
